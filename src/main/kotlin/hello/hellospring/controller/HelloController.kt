@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.ResponseBody
 
 @Controller
 class HelloController {
-
     @GetMapping("hello")
     fun hello(model: Model): String {
         model["data"] = "hello!!"

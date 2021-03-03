@@ -23,4 +23,8 @@ class MemoryMemberRepository : MemberRepository {
     override fun findAll(): List<Member> {
         return ArrayList(store.values)
     }
+
+    override fun clearStore() {
+        store.clear()
+    }
 }
