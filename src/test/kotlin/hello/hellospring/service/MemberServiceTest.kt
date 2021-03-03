@@ -55,11 +55,6 @@ internal class MemberServiceTest {
         assertThatThrownBy { memberService.join(member2) }
             .isInstanceOf(IllegalStateException::class.java)
             .hasMessageContaining("이미 존재하는 회원입니다.")
-//        try {
-//            memberService.join(member2)
-//        } catch (e: IllegalStateException) {
-//            assertThat(e.message).isEqualTo("이미 존재하는 회원입니다.123")
-//        }
 
         //then
     }
