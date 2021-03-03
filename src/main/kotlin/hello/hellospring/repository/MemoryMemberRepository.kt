@@ -1,9 +1,7 @@
 package hello.hellospring.repository
 
 import hello.hellospring.domain.Member
-import org.springframework.stereotype.Repository
 
-@Repository
 class MemoryMemberRepository : MemberRepository {
     private var store: HashMap<Long, Member> = HashMap()
     private var sequence: Long = 0L
