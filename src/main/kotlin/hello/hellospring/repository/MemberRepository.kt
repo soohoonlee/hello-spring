@@ -7,5 +7,4 @@ interface MemberRepository {
     fun findById(id: Long): Member?
     fun findByName(name: String): Member?
     fun findAll(): List<Member?>
-    fun clearStore()
 }

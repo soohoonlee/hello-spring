@@ -24,7 +24,7 @@ class MemoryMemberRepository : MemberRepository {
         return ArrayList(store.values)
     }
 
-    override fun clearStore() {
+    fun clearStore() {
         store.clear()
     }
 }
