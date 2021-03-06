@@ -32,7 +32,7 @@ internal class MemberServiceIntegrationTest(val memberService: MemberService) {
 
     @DisplayName(value = "중복 회원 예외")
     @Test
-    internal fun duplicateMemberException() {
+    fun duplicateMemberException() {
         //given
         val member1 = Member()
         member1.name = "spring"
